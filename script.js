@@ -3,13 +3,13 @@
 document.getElementById("button").addEventListener("click",handleSubmit)
 function handleSubmit(e) {
 	e.preventDefault();
-	let initialUrl=document.getElementById("form").action
+	let initialUrl="";
 	let name=document.getElementById("name").value;
 	let year=document.getElementById("year").value;
-	if(name && year) initialUrl+='?name='+name+'&year='+year;
-	else if(name)initialUrl+='?name='+name;
-	else initialUrl+='?year='+year;
-	textelement.innerHTML=initialUrl;
+	if(name && year) textelement.textcontent+='?name='+name+'&year='+year;
+	else if(name)textelement+='?name='+name;
+	else textelement+='?year='+year;
+	
 
 // 	const myUrl2 = new URL(window.location.toLocaleString()).searchParams;
 
